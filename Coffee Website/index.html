@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+
+    <!--header section start-->
+    
+<header class="header">
+    
+   <a href="#" class="logo"> 
+    <img src="data:image/png;base64,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">
+    </a>
+    
+<nav class="navbar">
+    <a href=" #home">home</a>
+    <a href=" #about">about</a>
+    <a href=" #menu">menu</a>
+    <a href=" #products">products</a>
+    <a href=" #review">review</a>
+    <a href=" #contact">contact</a>
+    <a href=" #blogs">blogs</a>
+</nav>
+<div class="icons">
+     <div class="fa fa-search" id="search-btn"></div>
+     <div class="fa fa-shopping-cart" id="cart-btn"></div>
+     <div class="fa fa-bars" id="menu-btn"></div>
+</div>
+
+<div class="search-form">
+    <input type="search" id="search-box" placeholder="search here...">
+    <label for="search-box" class="fa fa-search"></label>
+</div>
+
+<div class="cart-items-container">
+    <div class="cart-item">
+       <span class="fa fa-times"></span>  
+       <img src="images/cart1.jpg">
+         <div class="content">
+            <h3>cart item 01</h3>
+            <div class="price">Rs.425.00</div>
+
+         </div>
+    </div>
+
+    <div class="cart-item">
+        <span class="fa fa-times"></span>  
+        <img src="images/cart2.jpg">
+          <div class="content">
+             <h3>cart item 01</h3>
+             <div class="price">Rs.425.00</div>
+ 
+          </div>
+    </div>
+
+    <div class="cart-item">
+        <span class="fa fa-times"></span>  
+        <img src="images/cart3.jpg">
+           <div class="content">
+              <h3>cart item 01</h3>
+              <div class="price">Rs.425.00</div>
+ 
+            </div>
+    </div>
+
+    <div class="cart-item">
+        <span class="fa fa-times"></span>  
+        <img src="images/cart4.png">
+            <div class="content">
+              <h3>cart item 01</h3>
+              <div class="price">Rs.425.00</div>
+ 
+            </div>
+    </div>
+        <a href="#" class="btn">checkout now</a>
+      
+</div>
+</header>
+<!--header section end-->
+
+
+<!--home section starts-->
+<section class="home" id="home">
+    <div class="content">
+        <h1>Coffee Factory</h1>
+        <a href="#" class="btn">get yours now</a>
+    </div>
+
+</section>
+
+<!--home section ends-->
+
+<!--about section starts-->
+<section class="about" id="about">
+    <h1 class="heading"><span>about</span> us</h1>
+   
+    <div class="row">
+        
+        <div class="image">
+            <img src="https://img.freepik.com/free-photo/italian-espresso-black-cup-coffee-breakfast-cup-fresh-coffee-among-coffee-beans-closeup_166373-1988.jpg">
+        </div>
+        
+        <div class="content">
+            <h3>What makes our Coffee special</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor libero consectetur quae, commodi quibusdam animi repellendus totam atque, quod reiciendis labore illo quas dolores ratione accusantium tempore exercitationem hic quaerat.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+    </div>
+</section>
+
+<!--about section ends-->
+
+<!--menu section starts-->
+
+<section class="menu" id="menu">
+    <h1 class="heading">our<span> menu</span></h1>
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX10206867.jpg">
+            <h3>Dark Coffee</h3>
+            <div class="price">RS.550.00<span> RS.600.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/download.jpg">
+            <h3>Americano</h3>
+            <div class="price">RS.580.00<span> RS.620.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="https://atlas-content-cdn.pixelsquid.com/stock-images/coffee-cup-small-glass-with-milk-MNew79C-600.jpg">
+            <h3>Hot Mocha</h3>
+            <div class="price">RS.500.00<span> RS.600.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/image2.png">
+            <h3>Expresso</h3>
+            <div class="price">RS.700.00<span> RS.740.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/image3.png">
+            <h3>Cold Mocha</h3>
+            <div class="price">RS.750.00<span> RS.800.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/image4.png">
+            <h3>Cappuccino</h3>
+            <div class="price">RS.600.00<span> RS.620.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/image5.jpg">
+            <h3>Coffee Cookies</h3>
+            <div class="price">RS.400.00<span> RS.440.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="images/image6.jpg">
+            <h3>Choco Chips Cookies</h3>
+            <div class="price">RS.500.00<span> RS.570.00</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+
+
+    </div>
+
+</section>
+<!--menu section ends-->
+
+<!--product section starts-->
+<section class="products" id="products">
+    <h1 class="heading">Our<span> Products</span></h1>
+    
+    <div class="box-container">
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+
+            <div class="image">
+                <img src="images/image7.jpg">
+            </div>
+
+            <div class="content">
+                <h3>Fresh Coffee</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>
+                </div>
+                <div class="price">Rs.300.00<span> Rs.350.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+
+            <div class="image">
+                <img src="images/image8.jpg">
+            </div>
+
+            <div class="content">
+                <h3>Patch Roast</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>
+                </div>
+                <div class="price">Rs.450.00<span> Rs.500.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fa fa-shopping-cart"></a>
+                <a href="#" class="fa fa-heart"></a>
+                <a href="#" class="fa fa-eye"></a>
+            </div>
+
+            <div class="image">
+                <img src="images/image9.jpg">
+            </div>
+
+            <div class="content">
+                <h3>Coffee frack Packs</h3>
+                <div class="stars">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-full"></i>
+                </div>
+                <div class="price">Rs.1000.00<span> Rs.1350.00</span></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!--product section ends-->
+
+<!--review section starts-->
+
+<section class="review" id="review">
+    <h1 class="heading">Customer's<span> Reviews</span></h1>
+<div class="box-container">
+    <div class="box">
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatibus odio consequuntur delectus voluptas incidunt libero ducimus magnam fuga eaque? Numquam quaerat exercitationem porro veritatis ea saepe ab ratione dolore!</p>
+        <img src="images/img11.jpg" class="users"alt="">
+        <h3>Alenie Fellow</h3>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-full"></i>
+        </div>
+    </div>
+
+    <div class="box">
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatibus odio consequuntur delectus voluptas incidunt libero ducimus magnam fuga eaque? Numquam quaerat exercitationem porro veritatis ea saepe ab ratione dolore!</p>
+        <img src="images/img10.jpg" class="users"alt="">
+        <h3>John Wicky</h3>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-full"></i>
+        </div>
+    </div>
+
+    <div class="box">
+       
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatibus odio consequuntur delectus voluptas incidunt libero ducimus magnam fuga eaque? Numquam quaerat exercitationem porro veritatis ea saepe ab ratione dolore!</p>
+        <img src="images/img12.jpg" class="users"alt="">
+        <h3>Andria Beauty</h3>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-full"></i>
+        </div>
+    </div>
+
+</div>
+    
+</section>
+<!--review section ends-->
+
+<!--contact section starts-->
+<section class="contact" id="contact">
+    <h1 class="heading"> <span>contact</span> us</h1>
+    <div class="row">
+        <form action="">
+            <h3>get in touch</h3>
+        <div class="inputBox">
+            <span class="fa fa-user"></span>
+            <input type="text" placeholder="name">
+        </div>
+
+        <div class="inputBox">
+            <span class="fa fa-envelope"></span>
+            <input type="email" placeholder="email">
+        </div>
+
+        <div class="inputBox">
+            <span class="fa fa-phone"></span>
+            <input type="number" placeholder="number">
+        </div>
+
+        <input type="submit" value="contact now" class="btn">
+
+        </form>
+    </div>
+
+</section>
+<!--contact section ends-->
+
+<!--blogs section starts-->
+<section class="blogs" id="blogs">
+    <h1 class="heading">our<span> blogs</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/img1.jpg">
+            </div>
+        
+            <div class="content">
+                <a href="#" class="title">tasty and refreshing coffee</a>
+                <span>by admin / 21st may, 2023</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis tempore quibusdam. Recusandae, placeat architecto. Eius eveniet, autem, impedit facere repellat, magni quidem ducimus atque dicta tempore ab esse accusamus.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+               <img src="images/img2.jpg">
+            </div>
+           
+           <div class="content">
+               <a href="#" class="title">tasty and refreshing coffee</a>
+               <span>by admin / 21st may, 2023</span>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis tempore quibusdam. Recusandae, placeat architecto. Eius eveniet, autem, impedit facere repellat, magni quidem ducimus atque dicta tempore ab esse accusamus.</p>
+               <a href="#" class="btn">read more</a>
+           </div>
+        </div>
+
+           
+        <div class="box">
+            <div class="image">
+               <img src="images/img3.jpg">
+           </div>
+           
+           <div class="content">
+               <a href="#" class="title">tasty and refreshing coffee</a>
+               <span>by admin / 21st may, 2023</span>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A reiciendis tempore quibusdam. Recusandae, placeat architecto. Eius eveniet, autem, impedit facere repellat, magni quidem ducimus atque dicta tempore ab esse accusamus.</p>
+               <a href="#" class="btn">read more</a>
+           </div>
+        </div>
+
+
+    </div>
+</section>
+<!--blogs section ends-->
+
+<!--footer section starts-->
+
+<section class="footer">
+    <div class="share">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">menu</a>
+        <a href="#">product</a>
+        <a href="#">review</a>
+        <a href="#">contact</a>
+        <a href="#">blogs</a>
+    </div>
+
+    <div class="credit">created by <span>miss. web designer</span> | all rights reserved</div>
+</section>
+
+<!--footer section ends-->
+    
+ 
+<script src="script.js"></script>
+</body>
+</html>                                                                               
